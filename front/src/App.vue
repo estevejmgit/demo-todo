@@ -1,47 +1,24 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="container text-center mt-5">
+    <h1 class="display-4">Bienvenue sur TodoList by Libheros</h1>
+    <p class="lead">Gérez vos tâches efficacement avec notre application.</p>
+    <button class="btn btn-primary btn-lg mt-3" @click="goToLogin">Commencer</button>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+<script>
+export default {
+  methods: {
+    goToLogin() {
+      console.log('Redirection vers la page de connexion');
+      // Ici, tu pourras utiliser Vue Router plus tard pour naviguer vers /login
+    }
   }
+};
+</script>
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+<style>
+body {
+  background-color: #f8f9fa;
 }
 </style>
