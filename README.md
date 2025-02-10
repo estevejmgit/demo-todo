@@ -20,4 +20,4 @@ Branches `main` pour le serveur de production et branches `feature/*` pour les d
 docker compose up -d
 ```
 
-Cette commande va lancer les containers nécessaires au Front et Back de l'application. Le Front est disponible sur `http://localhost:8080`.
+Cette commande va lancer les containers nécessaires au Front et Back de l'application. Le Front est disponible sur `http://localhost:8080`, le back sur `http://localhost:3000` et la DB est accessible en interne avec la commande `docker exec -it libheros-db-1 psql -U postgres -d libheros_todo`
