@@ -1,9 +1,7 @@
 # Todo-list App pour Libheros
 
-## Installation
+## Frontend
 
-Depuis le dossier ./libheros/front, lancez le FrontEnd avec :
+Front-end : Vue.js & Boostrap pour une interface dynamique et responsive.
 
-```shell
-docker-compose up -d
-```
+Notes d'installation dans la README à la racine du projet

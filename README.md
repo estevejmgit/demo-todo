@@ -13,3 +13,11 @@ Ce projet consiste à créer une application todo list en mode CRUD (création, 
 ## Git
 
 Branches `main` pour le serveur de production et branches `feature/*` pour les développements
+
+## Déploiement
+
+```shell
+docker compose up -d
+```
+
+Cette commande va lancer les containers nécessaires au Front et Back de l'application. Le Front est disponible sur `http://localhost:8080`.
