@@ -1,4 +1,4 @@
-# Todo-list App pour Libheros
+# Todo-list App pour demo
 
 Ce projet consiste à créer une application todo list en mode CRUD (création, lecture, mise à jour, suppression).
 
