@@ -12,6 +12,7 @@ export class AuthService {
   constructor(
     @InjectRepository(User)
     private userRepository: Repository<User>,
+    private jwtService: JwtService  
   ) {}
 
   async register(registerDto: RegisterDto): Promise<{ message: string }> {
